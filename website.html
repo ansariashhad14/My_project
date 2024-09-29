@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {         
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #00264d;
+            height: 60px;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            color: white;
+            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+        }
+
+        .navbar .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s, padding 0.3s;
+        }
+
+        .navbar .nav a:hover {
+            color: #66c2ff;
+            padding-right: 25px;
+        }
+
+        .navbar .nav2 a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav2 a:hover {
+            color: orange;
+        }
+
+        .navbar .nav2 h3 {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .main .text-content {
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+        .main .text-content p {
+            margin-bottom: 20px;
+            margin-top: 60px;
+            font-size: 16px;
+        }
+
+        .main .image-content {
+            max-width: 100%;
+        }
+
+        .main .image-content img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        
+
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
+            background-color: #003366;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #00509e;
+            transform: scale(1.05);
+        }
+
+        @media (min-width: 768px) {
+            .main {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .main .text-content {
+                margin-right: 20px;
+                max-width: 50%;
+            }
+
+            .main .image-content {
+                max-width: 40%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav2">
+            <a href="ashad1.jpg" target="_blank">
+                <h3>Mohd Ashhad</h3>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="#car">CAR</a>
+            <a href="#house">HOME</a>
+            <a href="#mobile">MOBILE</a>
+            <a href="#laptop"> LAPTOP</a>
+        </div>
+    </div>
+
+    <section class="first-sec" id="car">
+        <div style="background-color: #e0e2e4; color: rgb(0, 0, 0);" class="main">
+            <img style="height:403px; float:  ;;" src="car1.png" alt="Car Image">
+            <div class="text-content">
+                <p><b>A car, also known as an automobile or motor vehicle, is a wheeled vehicle that is powered by an
+                    engine or motor and primarily used to transport people. Cars have many features, including: Are you
+                    planning on buying a new car? Well, we know that with so many car options available out there, it
+                    gets really difficult to find a good car which suits your need. Hence, we have put together a
+                    complete list of new cars. Maruti Suzuki, Tata, and Hyundai are the 3 most popular car brands. These
+                    popular car brands cater to a wide spectrum of budgets and needs, offering a variety of cars from
+                    fuel-efficient hatchbacks to spacious SUVs. The 5 most popular cars are Tata Curvv, MG Windsor EV,
+                    Hyundai Alcazar, Mahindra Thar Roxx, and Mahindra XUV 3XO. Explore the complete list of cars by
+                    exploring different brands or by applying multiple filters such as budget, fuel type, body type,
+                    etc. You can find the car that suits you best from the list of cars below.</b></p>
+                <a href="file:///C:/Users/ansar/Desktop/HTML-CODE/website2%20.html" target="_blank" class="button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="second-sec" id="house">
+        <div style="background-color:#c6c7c9; color: rgb(0, 0, 0);" class="main">
+            <div class="text-content">
+                <p><b>A house, also known as a dwelling or residence, is a building designed for people to live in. Houses
+                    come in various styles and sizes, including traditional haveli structures that are often
+                    characterized by their elaborate architecture and spacious courtyards. If you are considering
+                    purchasing a new home, it can be overwhelming due to the wide variety of options available.
+                    Therefore, we have compiled a comprehensive list of new houses to help you make an informed
+                    decision. Renowned builders and real estate developers offer a range of properties, from modern
+                    apartments to classic havelis, each catering to different tastes and budgets. The top features of a
+                    well-designed house include spacious living areas, well-planned layouts, and aesthetic appeal.
+                    Explore the full list of available houses by filtering through options such as location, size,
+                    architectural style, and more. You can find a home that perfectly matches your preferences and needs
+                    from the curated list of properties below.</b></p>
+                    <a style="margin-left:185px;" href="home.html" target="_blank" class="button">Learn More</a>
+            </div>
+            <div class="image-content" id="second">
+                <img src="house0.jpg" alt="house Image">
+                
+            </div>
+            </div>
+    </section>
+
+    <section class="three-sec" id="mobile">
+        <div style="background-color: #ffffff; color: rgb(0, 0, 0);" class="main">
+            <img style="height: 403; margin-right: 50px;" src="mobile4.png" alt="Mobile Image">
+            <div class="text-content">
+                <p><b>A mobile phone, also known as a cell phone or smartphone, is a portable device used for communication
+                    and a range of other functions. Mobile phones come in various models and sizes, including high-end
+                    smartphones with advanced features and more basic models designed for simplicity. If you are looking
+                    to buy a new mobile phone, the sheer number of options available can be overwhelming. To assist you,
+                    we have curated a detailed list of the latest mobile phones to help you make an informed choice.
+                    Leading brands and manufacturers offer a variety of devices, from flagship smartphones with
+                    cutting-edge technology to budget-friendly phones with essential features. Key considerations for
+                    choosing a mobile phone include performance, camera quality, battery life, and design. Explore the
+                    comprehensive list of available models by filtering options such as brand, specifications, price
+                    range, and more. You can find a mobile phone that perfectly suits your needs and preferences from
+                    the selection below.</b></p>
+                <a style="margin-left:250px;" href="mobile.html" target="_blank" class="button">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="four-sec" id="laptop">
+        <div style="background-color:#e0e2e4; color: rgb(0, 0, 0);" class="main">
+            <div class="text-content">
+                <p><b>A laptop computer or notebook computer, also known as a laptop or notebook, is a small,
+                    portable personal computer (PC). Laptops typically have a clamshell form factor with a flat-panel
+                    screen on the inside of the upper lid and an alphanumeric keyboard and pointing device on the inside
+                    of the lower lid.[1][2] Most of the computer's internal hardware is fitted inside the lower lid
+                    enclosure
+                    under the keyboard, although many modern laptops have a built-in webcam at the top of the screen,
+                    and some
+                    even feature a touchscreen display. In most cases, unlike tablet computers which run on mobile
+                    operating
+                    systems, laptops tend to run on desktop operating systems, which were originally developed for
+                    desktop computers.
+                    Laptops can run on both AC power and rechargable battery packs and can be folded shut for convenient
+                    storage and
+                    transportation, making them suitable for mobile use.[3] Laptops are used in a variety of settings,
+                    such as at work
+                    (especially on business trips).</b>
+                </p>
+                <a style="margin-left:220px;" href="laptop.html" target="_blank" class="button">Learn More</a>
+            </div>
+            <div class="image-content four">
+                <img style="height:403px;" src="laptop1.png" alt="laptop image">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
