@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            padding: 10px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+        
+        .main div {
+            position: relative;
+            border: 5px solid #c2c3c4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%;
+            max-width: 350px;
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .main div:hover {
+            transform: scale(1.05);
+        }
+
+        .main div img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+        }
+
+        .main div img.second {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .main div:hover img.first {
+            opacity: 0;
+        }
+
+        .main div:hover img.second {
+            opacity: 1;
+            
+        }
+
+        p {
+            margin-top: 10px;
+            color: #333;
+            font-size: 14px;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        p:hover{
+            color: red;
+        }
+
+        @media (max-width: 768px) {
+            .main div {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyT9DLosf_Rp-4KphATcKqBKLdJh25W8wpIw&s" alt="Car 7" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIvS2ufenQnmxns5BQPEI2mi4EizNEs9-V1A&s" alt="Car 8" class="second">
+            <p>Design
+                The iPhone is known for its iconic design and premium materials. For example, the iPhone 16 Pro is made from titanium, while the iPhone has a Ceramic Shield material that's tougher than any smartphone glass. 
+                </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiMnFGIWawD8DcMique8LoiuEiLhBlD-UUwA&s" alt="Car 5" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeNxNYmLSdUkJCcZRQQXbTYEi2Q19baknC3w&s" alt="Car 9" class="second">
+            <p>Design
+                The iPhone is known for its iconic design and premium materials. For example, the iPhone 16 Pro is made from titanium, while the iPhone has a Ceramic Shield material that's tougher than any smartphone glass. 
+                </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLFge6sEnP9ic5uzSnAkj4KAzbdB64JNsALA&s"alt="Car 6" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeNxNYmLSdUkJCcZRQQXbTYEi2Q19baknC3w&s"alt="Car 10" class="second">
+            <p>Design
+                The iPhone is known for its iconic design and premium materials. For example, the iPhone 16 Pro is made from titanium, while the iPhone has a Ceramic Shield material that's tougher than any smartphone glass. 
+                </p>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0D6DGwL9KK4GDqvk6EGrbre_HktSn_ZS1OQ&s"alt="Car 7" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu_UvBdLGLTOo1IlDrZCALl4fFR7_hgrnX-w&s" alt="car 4" class="second">
+            <p> A mobile phone or cell phone[a] is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area, as opposed to a fixed-location phone (landline phone). </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWZgTQ8ESbs1P9UQKMnyAaQ7koPe4ddAr4IA&s" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsXDL1c30_RADmv1qPRptK7MggZCIEDxyFtg&s"class="second">
+            <p>Design
+                The iPhone is known for its iconic design and premium materials. For example, the iPhone 16 Pro is made from titanium, while the iPhone has a Ceramic Shield material that's tougher than any smartphone glass. 
+                </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToee1Lnuw30jeK_0wrC1YtAM9IQssIAMZ9ww&s" alt="Car 6" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9XoSSLFiq56uErLKSTHiDznsucql5Du_l8A&s" class="second">
+            <p>Design
+                The iPhone is known for its iconic design and premium materials. For example, the iPhone 16 Pro is made from titanium, while the iPhone has a Ceramic Shield material that's tougher than any smartphone glass. 
+                </p>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9XoSSLFiq56uErLKSTHiDznsucql5Du_l8A&s" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-CsQhr1KExjRSO_oYC7RhjBnZJgeyU2cHyw&s" class="second">
+            <p>The iPhone is known for its iconic design and premium materials. For example, the iPhone 16 Pro is made from titanium, while the iPhone has a Ceramic Shield material that's tougher than any smartphone glass. </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrDkhxOpNqzbS2RCD3GVVjp1W8Eccz2VWP4A&s"class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqFQmariygw85vW4sSlBRqKFx-CyqGIOTEKw&s"class="second">
+            <p>The iPhone is known for its iconic design and premium materials. For example, the iPhone 16 Pro is made from titanium, while the iPhone has a Ceramic Shield material that's tougher than any smartphone glass. </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHkOM5kD9OzsI7PKHrlC8P9rf4G4sgSSxhQ&s"lass="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYCHHaIcuU0Vx49JLfAz6uXX20hsBxwB2umg&s" class="second">
+            <p>The iPhone is known for its iconic design and premium materials. For example, the iPhone 16 Pro is made from titanium, while the iPhone has a Ceramic Shield material that's tougher than any smartphone glass. </p>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSNCVTX8_TbK9fP2rDsP2EOWdEZguO4d1wiA&s"class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBpYgUov8QFkQg-LSv2PaKsJajE-z6ClawuQ&s" class="second">
+            <p>The iPhone is known for its iconic design and premium materials. For example, the iPhone 16 Pro is made from titanium, while the iPhone has a Ceramic Shield material that's tougher than any smartphone glass. </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCJO_yxMmChbbdeifj3cLCCCCW_RZNv4zQMQ&s" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwCcmY3WndP9vjR7jcFhqKoTW2Apn91po_sA&s" class="second">
+            <p>The iPhone is known for its iconic design and premium materials. For example, the iPhone 16 Pro is made from titanium, while the iPhone has a Ceramic Shield material that's tougher than any smartphone glass. </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjIm0_TrWdGTP9fZ3xxiaRz8-meGCog1DD-g&s"class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThd3G4UMiguHl1RgTLfBl8JXVv8MXBHDvQfw&s" class="second">
+            <p>The iPhone is known for its iconic design and premium materials. For example, the iPhone 16 Pro is made from titanium, while the iPhone has a Ceramic Shield material that's tougher than any smartphone glass. </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            padding: 10px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+        
+        .main div {
+            position: relative;
+            border: 5px solid #c2c3c4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%;
+            max-width: 350px;
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .main div:hover {
+            transform: scale(1.05);
+        }
+
+        .main div img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+        }
+
+        .main div img.second {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .main div:hover img.first {
+            opacity: 0;
+        }
+
+        .main div:hover img.second {
+            opacity: 1;
+            
+        }
+
+        p {
+            margin-top: 10px;
+            color: #333;
+            font-size: 14px;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        p:hover{
+            color: red;
+        }
+
+        @media (max-width: 768px) {
+            .main div {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzcz3PEiGbMs7JxYpdI0EjqRgEp9d--sxFAg&s" alt="Car 7" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhtJp5Zc90x75MI0gbNM5DF3JXpEbLUo_zPA&s"alt="Car 8" class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRec1fC2LxoQiXaOHcKDlPYbChBMrhtUD8KCw&s"alt="Car 5" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUoxR5oJjra-gCv25AVlLl1f6aNhKWfLU4dQ&s" alt="Car 9" class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+        </div> 
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9iSLbDb9hfQlIS4hItKSw7t5Drnf-j8K5Ww&s" alt="Car 6" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0ZpMDU-QuGWqVC58Gkb3i-_ki5FdBySqvQ&s"alt="Car 10" class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+            </div>
+    </div>
+    <div class="main">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPPdAgL4rU9kv96WS379XwEuynVtc7IgkK7g&s"alt="Car 7" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-VXEoQZwOvjP96IFoTnyumPUv_isZqTxww&s" alt="car 4" class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+            </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu2GRDQtOT3i7hHgXgORVx60bNrwiTT3xV2w&s" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXQV4mfzwdZ8nITpDod5mbffHwrSdVUzSk9Q&s"class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkCt-o1TYN8avLlmtzyi05PB2sxhwGk5hGLg&s" alt="Car 6" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe-DrypijzjYQRQl3bB7x5BVTw-KSK-J4sNA&s" class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSipw3ZJpJAVh4GhMFFlfKOjZMeQ_8qla-Mkg&s" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_1HVkwJjP6HfdiV2E3N8T2wHrC4qX4ywxfA&s" class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7rYUsLEBKJ82vj3E4TplY3mMZ31XkXjm4tA&s" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGsKq_gkZAniE5T6OE9e0VCp7Ap2UapcJHQ&s" class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCp6E_i8gtbL7yQTjsrnUpmpmM4YauP_CP5Q&s"lass="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdWPbbFLDllWEHjga0uoeWNQas3hE2-Z61OQ&s" class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy0z1sb7ksP4dMJV1QF0mziLOHa13CUu8blA&s"class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKFCsPiiTU6WIALcMsVKx0Xngj3Hs8TwnMbw&s" class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTXlJwlZqpg8o0ip-aB5P_8LcQVyV9KmMMQ&s" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyS5mufz2g0FlQwYPtrUqPJ84vyOrUUQWJHA&s" class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTriarVFvdFWUe9t-hiAS8h7EvjWIjFn_NFw&s"class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh-HnDONwh-dmt1eDx778YjtRGtQKjLdHOoQ&s" class="second">
+            <p>A laptop, or notebook computer, is a portable computer that's typically smaller than a desktop computer and is powered by a battery. Laptops are designed for personal use and can perform a variety of functions, including browsing the internet, creating documents, and playing games.</p>
+        </div>
+    </div>
+</body>
+
+</html>

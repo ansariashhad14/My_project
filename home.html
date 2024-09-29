@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            padding: 10px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+        
+        .main div {
+            position: relative;
+            border: 5px solid #c2c3c4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%;
+            max-width: 350px;
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .main div:hover {
+            transform: scale(1.05);
+        }
+
+        .main div img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+        }
+
+        .main div img.second {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .main div:hover img.first {
+            opacity: 0;
+        }
+
+        .main div:hover img.second {
+            opacity: 1;
+            
+        }
+
+        p {
+            margin-top: 10px;
+            color: #333;
+            font-size: 14px;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        p:hover{
+            color: red;
+        }
+
+        @media (max-width: 768px) {
+            .main div {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlT9X_fWp0UIAoYWi9_t1MuXjVotZJc9CPMg&s" alt="Car 7" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWwZGWnpdqGGBcZm1jkl1v4KboQYjjNhb9Ag&s" alt="Car 8" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers.</p>
+        </div>
+        <div>
+            <img src="https://media.istockphoto.com/id/1032348746/photo/suburban-tree-lined-street-with-two-storey-houses-in-the-summer.jpg?s=612x612&w=0&k=20&c=eOhRquf2Efifllu4vxYOtiXZozKsT-wrb3OqjTk8A7U=" alt="Car 5" class="first">
+            <img src="https://media.istockphoto.com/id/593339720/photo/cleveland-houses-residential-area.jpg?s=612x612&w=0&k=20&c=ZYYAQQ8PETtGzj1q2pYycMnrGQn69Bm5P7AP9sZ9mDk=" alt="Car 9" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers.</p>
+        </div>
+        <div>
+            <img src="https://media.istockphoto.com/id/1542860236/photo/travel-india.jpg?s=612x612&w=0&k=20&c=dNIZHsRTorAtH3tW2bOC4pGSxZ7Zbnv6wnLcXSTiblY=" alt="Car 6" class="first">
+            <img src="https://media.istockphoto.com/id/1218463296/photo/afternoon-shot-of-humayuns-tombs-front-corner.jpg?s=612x612&w=0&k=20&c=n26H7H5kvmGHHeFWOCFNJ1rYdRdPi4CiRO3-p4KTfNI=" alt="Car 10" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers. </p>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <img src="data:image/jpeg;base64,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" alt="Car 7" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSClpfUM_3jvkI-vHY8_1fxDyQXEX074Nt62CW9KFrgk5U3-yQ0pATxOJf6uysR0Vis98Y&usqp=CAU" alt="car 4" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers. </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNlJaZ9HCeJ_7J02RyprIPGrwLNg_zLXYXbg&s" class="first">
+            <img src="https://www.shutterstock.com/shutterstock/photos/274414979/display_1500/stock-photo-the-roof-of-the-house-with-nice-window-274414979.jpg" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers.</p>
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/736x/ef/0f/0f/ef0f0fa31112c268c1a97565874d89c5.jpg" alt="Car 6" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNH5-f_UQfHgdLImNwnwzmj18pkEbK-7nJztO6ktrya9zmHM-ydJCUDk6UmN-SJXKv6o&usqp=CAU" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers.</p>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_UW7ahNvb3cJbXd6SrtZPsWXY3rv5K_dhAFQfe4MbtK3nAvbhaOhX6zJ9DUMeBdVnDc&usqp=CAU" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUUGSCAJ5lnrrmleJ1LVIW_7u2omoCkgAXSg&s" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers.</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvDS71-TK2C1QaynoJ06Xgq9bP9H6GIyt2jw&s" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiMh6_PmzlX4JN3KGMm1azhzJNdq7OA-XgCw&s" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers.</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRS8DKxguLwj3N9iSfxr5Ph6JCQsRMTZ3fHQ&s"lass="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpU_8L1h1AC9SuerumGAO1JZXHVrUNQJtoPA&s" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers.</p>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsvxpyw94j_Msb8rRVzhm02Frc3MBsoiuFA&s"class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUB024o8mDjf2lCGdkW8xlBjandPprSb4-_w&s" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers.</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtt_6adBQLIBNKosiGeZfku4iQHeieFRMwqw&s" class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6G2iCU0_SrCqx0OP-45TnOqHNJEvYKgmAyA&s" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers.</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUAIqtCGHPZad_8HN0yKHNfCcnS7HSeqEjA&s"class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3i1jpJLXqxV-RpdvAe0yT2l-NdXgpq8UBCQ&s" class="second">
+            <p>My house is my most favourite place in the world. I live with my mother and father in my house. My house has three floors and lots of stairs. We have a garden outside our house with beautiful flowers.</p>
+        </div>
+    </div>
+</body>
+
+</html>
